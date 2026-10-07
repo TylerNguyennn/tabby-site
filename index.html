@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabby — fast, private tab manager</title>
+<meta name="description" content="Save, organize and reopen tabs from your new tab page. No account, no limits, everything stays on your device.">
+<meta property="og:title" content="Tabby — fast, private tab manager">
+<meta property="og:description" content="Save, organize and reopen tabs. No account, no limits.">
+<meta property="og:image" content="img/og-1200x630.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icon.png">
+<style>
+:root{--bg:#F7F7F8;--panel:#FFFFFF;--text:#1B1C1F;--muted:#5B5E66;--line:#E4E4E7;--accent:#4F46E5;--on-accent:#FFFFFF;--tint:#EEEDFB}
+@media (prefers-color-scheme: dark){:root{--bg:#111214;--panel:#18191C;--text:#ECEDEF;--muted:#A0A4AD;--line:#2C2E33;--accent:#9AA0FF;--on-accent:#111214;--tint:#1B1C2E}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px}
+header{background:var(--tint);padding:72px 0 0;text-align:center;overflow:hidden}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.08;letter-spacing:-.03em;margin:0}
+.lede{color:var(--muted);font-size:clamp(17px,2.4vw,21px);max-width:640px;margin:16px auto 28px}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;height:46px;padding:0 20px;border-radius:8px;font-weight:600;text-decoration:none;border:1px solid var(--line);color:var(--text);background:var(--panel)}
+.soon{display:inline-flex;align-items:center;min-height:46px;padding:8px 20px;text-align:center;border-radius:8px;font-weight:600;border:1px dashed var(--line);color:var(--muted)}
+.btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.hero{display:block;width:100%;height:auto;max-width:1000px;margin:48px auto 0;border-radius:14px 14px 0 0;box-shadow:0 20px 60px rgba(17,18,20,.2)}
+section{padding-block:64px}
+section+section{padding-top:0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted)}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.split{display:grid;grid-template-columns:360px 1fr;gap:48px;align-items:center;max-width:820px;margin:0 auto}
+.split img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+.split h2,.sec-title{font-size:28px;letter-spacing:-.02em;margin:0 0 8px}.split p{margin:0;color:var(--muted)}
+kbd{font:600 14px/1 ui-monospace,monospace;padding:3px 6px;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;background:var(--panel);color:var(--text)}
+.shots figure{margin:0}.shots img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}.shots figcaption{margin-top:8px;text-align:center;color:var(--muted);font-size:15px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:15px}
+footer a,.note a{color:var(--accent)}
+.topnav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0 0;font-size:15px}
+.topnav a{color:var(--text);text-decoration:none}.topnav .links{display:flex;gap:18px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px}
+.plan.pro{border:2px solid var(--accent)}
+.plan h3{margin:0;font-size:20px}.price{font-size:34px;font-weight:700;letter-spacing:-.02em;margin:8px 0 2px}
+.price small{font-size:16px;font-weight:500;color:var(--muted)}
+.plan ul{padding-left:20px;margin:14px 0 0}.plan li{margin:4px 0}
+.note{color:var(--muted);font-size:15px;margin-top:16px}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.plans{grid-template-columns:1fr;max-width:520px}}
+@media (max-width:760px){.shots{grid-template-columns:1fr}.split{grid-template-columns:1fr;gap:20px;max-width:360px}}
+@media (max-width:520px){.grid{grid-template-columns:1fr}section{padding-block:48px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="topnav" aria-label="Site"><a href="index.html"><strong>Tabby</strong></a><span class="links"><a href="#pricing">Pricing</a><a href="#install">Install</a></span></nav>
+    <h1 style="margin-top:48px">Save your work, not just your links</h1>
+    <p class="lede">Tabby keeps each project's tabs in its own space. Switch projects and your window swaps tabs, with everything saved automatically. Tidy up a messy window in a minute, find anything with ⌘K, and never lose a window again.</p>
+    <div class="ctas">
+      <!-- TODO(release): point these at the store listings once published -->
+      <span class="soon">Coming soon to Chrome and Firefox</span>
+    </div>
+    <img class="hero" src="img/home.png" alt="Tabby's new tab page: spaces with their collections, favorites, Inbox and recently opened links, next to this window's open tabs" width="1280" height="800">
+  </div>
+</header>
+<main>
+  <section class="wrap">
+    <div class="grid">
+      <div class="card"><h3>Switch between projects</h3><p>Each space keeps its own tabs. Switch and your window swaps them; pinned tabs stay.</p></div>
+      <div class="card"><h3>Tidy up in a minute</h3><p>One tab at a time, oldest first: keep, close or save with one key. Undo anything.</p></div>
+      <div class="card"><h3>Right beside the page</h3><p>The side panel puts spaces, Tidy up and your Inbox next to what you're reading.</p></div>
+      <div class="card"><h3>No account, no limits</h3><p>Save as many links as you like. Everything stays on your device.</p></div>
+      <div class="card"><h3>Fast with thousands of links</h3><p>The board opens in a blink, even with 5,000 saved links.</p></div>
+      <div class="card"><h3>Find anything with ⌘K</h3><p>Search saved links, collections and open tabs in one place.</p></div>
+      <div class="card"><h3>Never lose a window</h3><p>Automatic session backups, undo for every delete, and a Trash.</p></div>
+      <div class="card"><h3>Coming from Toby or OneTab?</h3><p>Import your export file — or browser bookmarks — in seconds.</p></div>
+    </div>
+  </section>
+  <section class="wrap">
+    <div class="shots">
+      <figure><img src="img/switch.png" alt="Side panel next to a web page, with the space menu open: Payments API in this window, Q4 launch and Personal" loading="lazy" width="1280" height="800"><figcaption>Switch spaces from the side panel</figcaption></figure>
+      <figure><img src="img/tidy.png" alt="Tidy up in the side panel: one tab with hints, and Keep, Close and Save buttons" loading="lazy" width="1280" height="800"><figcaption>Tidy up: one key per tab</figcaption></figure>
+      <figure><img src="img/rename.png" alt="A collection of GitHub links with short, cleaned titles, one being renamed inline" loading="lazy" width="1280" height="800"><figcaption>Clean titles; Enter to rename, Tab for the next</figcaption></figure>
+    </div>
+  </section>
+  <section class="wrap">
+    <div class="split">
+      <img src="img/popup.png" alt="Toolbar popup saving the current tab to a collection" loading="lazy" width="360" height="452">
+      <div>
+        <h2>Save the tab you’re on</h2>
+        <p>Press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> or click the toolbar icon, pick a collection (or type a new one) and press Enter. Tabby remembers where you saved it last.</p>
+      </div>
+    </div>
+  </section>
+  <section class="wrap" id="pricing">
+    <h2 style="font-size:28px;letter-spacing:-.02em;margin:0 0 8px">Pricing</h2>
+    <p style="color:var(--muted);margin:0 0 24px">Free for everything you need every day. Pro for people who run many projects at once.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <p class="price">$0 <small>forever</small></p>
+        <ul>
+          <li>Unlimited saved tabs, collections and spaces</li>
+          <li>Switch between up to 5 spaces</li>
+          <li>Tidy up: keep, close or save with one key</li>
+          <li>⌘K search, favorites, session restore, Trash</li>
+          <li>Import from Toby, OneTab and bookmarks</li>
+          <li>No account; everything stays on your device</li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <h3>Pro</h3>
+        <p class="price">$4 <small>/ month</small></p>
+        <p style="margin:0;color:var(--muted)">or $29 / year</p>
+        <ul>
+          <li>Everything in Free</li>
+          <li>Unlimited switchable spaces</li>
+          <li>Tidy up straight into collections (1–9)</li>
+          <li>Coming next: duplicate cleanup and AI chat tracking</li>
+          <li>14-day free trial, no card needed</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Founding member</h3>
+        <p class="price">$49 <small>once</small></p>
+        <ul>
+          <li>Pro for life, including future Pro features</li>
+          <li>Launch offer: first 100 buyers only</li>
+          <li id="founding-left" hidden></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Prices in USD; sales tax or VAT may be added at checkout. Payments are processed by our reseller Creem (creem.io), the Merchant of Record. 30-day money-back guarantee, see the <a href="refund.html">refund policy</a>.</p>
+  </section>
+  <section class="wrap" id="install">
+    <h2 style="font-size:28px;letter-spacing:-.02em;margin:0 0 8px">Install</h2>
+    <p class="muted" style="color:var(--muted);margin:0">Tabby is coming soon to the Chrome Web Store and Firefox Add-ons. Install buttons will appear here once it’s available. It will work in Chrome, Edge, Brave, Arc and Firefox 140+.</p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">Tabby is made by Nguyen Huu Tai · Contact: <a href="mailto:tainh.work@gmail.com">tainh.work@gmail.com</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="privacy.html">Privacy</a> · No tracking on this site.</div>
+</footer>
+<script src="pay-config.js"></script>
+<script>
+// Founding-member spots left (first 100 buyers), from the license server.
+fetch(`${TABBY_PAY.licenseApi}/founding`)
+  .then((r) => r.json())
+  .then((d) => {
+    const el = document.getElementById('founding-left');
+    if (d.open === false) return; // paid plans not open yet: test purchases don't count
+    el.textContent = d.left > 0 ? `${d.left} of ${d.limit} spots left` : 'Sold out';
+    el.hidden = false;
+  })
+  .catch(() => {});
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabby — Privacy policy</title>
+<style>
+:root{--bg:#F7F7F8;--panel:#FFFFFF;--text:#1B1C1F;--muted:#5B5E66;--line:#E4E4E7;--accent:#4F46E5}
+@media (prefers-color-scheme: dark){:root{--bg:#111214;--panel:#18191C;--text:#ECEDEF;--muted:#A0A4AD;--line:#2C2E33;--accent:#9AA0FF}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif}
+main{max-width:720px;margin:0 auto;padding:48px 16px 80px}
+h1{font-size:32px;letter-spacing:-.02em;margin:0 0 4px}h2{font-size:19px;margin:32px 0 8px}
+p,li{color:var(--text)}.muted{color:var(--muted)}a{color:var(--accent)}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+th,td{text-align:left;padding:10px 12px;border-top:1px solid var(--line);vertical-align:top}th{border-top:0;font-weight:600}
+code{font-size:14px}
+nav.top{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px;font-size:15px}nav.top a{text-decoration:none}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<nav class="top" aria-label="Site"><a href="index.html"><strong>Tabby</strong></a><a href="index.html#pricing">Pricing</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a><a href="privacy.html">Privacy</a></nav>
+<h1>Privacy policy</h1>
+<p class="muted">Tabby browser extension · Effective October 7, 2026</p>
+
+<p><strong>Short version: Tabby never collects, sells or transmits your tabs, links or browsing. Everything you save stays on your device.</strong> There is no account, no analytics and no tracking. If you try or buy Tabby Pro, only a random install ID and your plan are checked with our license server (details below).</p>
+
+<h2>What Tabby stores, and where</h2>
+<p>To work, Tabby stores the following <strong>only in your browser, on your device</strong> (IndexedDB and extension storage):</p>
+<ul>
+<li>Links you choose to save: their URL, title and (on Firefox) icon URL, organized into your spaces and collections.</li>
+<li>Automatic session snapshots: the URLs, titles and tab groups of your open windows, kept for 14 days so you can restore closed windows.</li>
+<li>Settings such as theme, view and your last-used space.</li>
+</ul>
+<p>None of this is sent to the developer or to anyone else.</p>
+
+<h2>Tabby Pro (only if you start a trial or buy)</h2>
+<ul>
+<li><strong>Payments</strong> are handled by our reseller <a href="https://www.creem.io/privacy">Creem (creem.io)</a>, which collects your name, email, payment details and country to process the order and tax. We receive your email, country and order details from Creem; we never see your card.</li>
+<li><strong>Checking your plan:</strong> Tabby creates a random install ID (not linked to your identity or browsing) and asks our license server whether that ID or your license key has an active Pro plan. The server stores the install ID, your license key, the plan and its end date, and Creem's order and subscription IDs: no name, no email, nothing about your tabs.</li>
+<li>Free users: no license check is made and nothing is sent.</li>
+</ul>
+
+<h2>Network requests</h2>
+<ul>
+<li>Opening a saved link loads that website, as any link would.</li>
+<li>Site icons: on Chrome and other Chromium browsers, icons come from the browser's local icon cache — no request is made. On Firefox, an icon may be loaded from the website it belongs to.</li>
+<li>Tabby Pro: the plan check described above.</li>
+<li>Opening the Tabby Pro page asks our license server whether paid plans are available and how many founding-member spots are left. Nothing about you or your device is sent with this request.</li>
+<li>Tabby makes no other network requests. It contains no remote code, ads, analytics or third-party SDKs.</li>
+</ul>
+
+<h2>Permissions</h2>
+<table>
+<tr><th>Permission</th><th>Why Tabby needs it</th></tr>
+<tr><td><code>tabs</code></td><td>Show your open tabs so you can save, switch to or close them, and open saved links.</td></tr>
+<tr><td><code>tabGroups</code></td><td>Save and restore tab group names and colors (Chrome).</td></tr>
+<tr><td><code>storage</code>, <code>unlimitedStorage</code></td><td>Keep your saved links and settings on your device, without a size cap.</td></tr>
+<tr><td><code>alarms</code></td><td>Schedule automatic session backups.</td></tr>
+<tr><td><code>sidePanel</code></td><td>Show Tabby in Chrome's side panel next to the page you are on.</td></tr>
+<tr><td><code>favicon</code></td><td>Show site icons from the browser's local cache (Chrome).</td></tr>
+<tr><td><code>downloads</code> (optional)</td><td>Asked only if you turn on scheduled backups; writes backup files to your Downloads folder.</td></tr>
+</table>
+
+<h2>Your control</h2>
+<ul>
+<li>Export everything at any time (Settings → Your data) as JSON or browser bookmarks.</li>
+<li>Delete links, collections or spaces; they move to Trash, and "Empty trash" removes them permanently.</li>
+<li><strong>Uninstalling Tabby permanently deletes all data it stored.</strong> Export a backup first if you want to keep it.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Tabby does not knowingly collect information from anyone, including children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published here with a new effective date. Tabby will never start collecting data without asking you first.</p>
+
+<h2>Contact</h2>
+<p>Questions: <span data-contact>see the feedback link on the Tabby website</span>.</p>
+<footer>Tabby is made by Nguyen Huu Tai · Contact: <a href="mailto:tainh.work@gmail.com">tainh.work@gmail.com</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="privacy.html">Privacy</a></footer>
+</main>
+</body>
+</html>
