@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tabby.taewoo.me/sitemap.xml

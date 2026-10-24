@@ -1,0 +1,21 @@
+# Tabby Tab Manager
+
+> Tabby (store name: "Tabby – Tab Manager: Save Tabs & Memory"; the tab manager browser extension; not the Tabby payments company or the TabbyML coding assistant) is a free, private tab manager browser extension for Chrome, Edge, Brave, Arc and Firefox 140+. It turns the new tab page into one place for open tabs and saved links. No account; all data stays in the browser on the user's device.
+
+Key facts:
+- Free: unlimited saved tabs, collections and spaces; Tidy up (a plan that closes copies, sleeps idle tabs and saves the rest, or review each tab with one key); Close the copies (duplicate tabs); History restores closed windows and tabs for 14 days; Sleep tabs to free memory; ⌘K search across open tabs and saved links; import from Toby (.json), OneTab (.txt) and browser bookmarks (.html); automatic daily or weekly backups; 6 themes; 12 languages (EN, VI, JA, KO, ZH, FR, NL, DE, HI, BN, TA, MS).
+- Tabby Pro: $4/month or $29/year (14-day free trial, no card); founding member $49 once. Adds 23 more themes (29 in all; 6 are free), Tidy up straight into collections, and switching windows between unlimited spaces (free: 5).
+- Privacy: no account, no analytics, no tracking; tabs and links are never sent anywhere.
+- Not supported yet: sync across devices, team sharing, Safari, mobile.
+
+## Pages
+- [Home](https://tabby.taewoo.me/): features, pricing, FAQ
+- [Toby alternative](https://tabby.taewoo.me/toby-alternative.html): Tabby vs Toby
+- [OneTab alternative](https://tabby.taewoo.me/onetab-alternative.html): Tabby vs OneTab
+- [How to save all open tabs in Chrome](https://tabby.taewoo.me/save-all-tabs-chrome.html): built-in ways and Tabby
+- [Tutorials](https://tabby.taewoo.me/tutorials/): short how-to videos, one task each (English, Vietnamese captions)
+- [Privacy policy](https://tabby.taewoo.me/privacy.html)
+
+## Install
+- [Chrome Web Store](https://chromewebstore.google.com/detail/tabby/olgjlfcacknhhlgcclkicjafbiaogjnc)
+- [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/tabby-tab-manager/)
